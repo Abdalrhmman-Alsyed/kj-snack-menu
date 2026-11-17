@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>KJ Snack | المنيو — Bite the WOW!</title>
+  <meta name="description" content="منيو KJ Snack: برغر، مقلي، مشاوي، سلطات ومقبلات. عضّة وحدة… وبتقول WOW!">
+  <meta name="theme-color" content="#FFC61A">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KJ Snack — Bite the WOW!">
+  <meta property="og:description" content="برغر، مقلي، مشاوي، سلطات ومقبلات. شوف المنيو كامل.">
+  <meta property="og:image" content="./og-image.jpg">
+  <meta property="og:locale" content="ar">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body class="is-loading">
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__dots"></div>
+    <div class="preloader__meta" dir="ltr" lang="en">
+      <span class="preloader__tag">BITE THE WOW!</span>
+      <span class="preloader__count"><b id="preloader-count">0</b>%</span>
+    </div>
+    <div class="preloader__bar"><i id="preloader-bar"></i></div>
+  </div>
+  <div class="loader-logo" id="loader-logo" aria-hidden="true"><span data-kj-logo></span></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="التنقّل الرئيسي">
+      <a class="nav__brand" href="#top" data-scroll aria-label="KJ Snack — رجوع لأول الصفحة">
+        <span class="nav__logo" id="nav-logo"><span data-kj-logo></span></span>
+        <span class="nav__name" dir="ltr" lang="en">KJ SNACK</span>
+      </a>
+      <div class="nav__links">
+        <a href="#anatomy" data-scroll class="nav__link nav__link--wide">شو في جوّا؟</a>
+        <a href="#offer" data-scroll class="nav__link nav__link--wide">العروض</a>
+        <a href="#contact" data-scroll class="nav__link nav__link--wide">تواصل</a>
+        <a href="#menu" data-scroll class="nav__link nav__cta">المنيو</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="progress" aria-hidden="true"><i id="progress-bar"></i></div>
+
+  <main id="main">
+
+    <!-- ============ STAGE: hero + burger anatomy (one sticky viewport) ============ -->
+    <div class="stage" id="top">
+      <div class="stage__sticky" id="stage-sticky">
+
+        <div class="stage__bg" aria-hidden="true">
+          <div class="stage__rays"></div>
+          <div class="stage__dots"></div>
+        </div>
+        <div class="stage__ring" aria-hidden="true"></div>
+        <div class="stage__ink" aria-hidden="true"></div>
+
+        <div class="stage__safe">
+
+          <!-- HERO -->
+          <section class="hero" id="hero">
+            <div class="hero__copy">
+              <h1 class="lockup" dir="ltr" lang="en" aria-label="KJ Snack — Bite the Wow!" data-hero-fade>
+                <span class="lockup__kj" aria-hidden="true"><span class="ch">K</span><span class="ch">J</span></span>
+                <span class="lockup__snack" aria-hidden="true"><span class="ch">S</span><span class="ch">N</span><span class="ch">A</span><span class="ch">C</span><span class="ch">K</span></span>
+                <span class="lockup__tag" aria-hidden="true"><span>BITE THE WOW!</span></span>
+              </h1>
+              <p class="hero__headline" data-hero-fade>
+                <span class="line"><span>عضّة وحدة…</span></span>
+                <span class="line"><span>وبتقول <span class="wowword" dir="ltr" lang="en">WOW!</span></span></span>
+              </p>
+              <p class="hero__sub" data-hero-fade>برغر عالأصول، مقلي مقرمش، مشاوي وسلطات — كل شي بيفتح النفس بمكان واحد.</p>
+              <div class="hero__cta" data-hero-fade>
+                <a class="btn btn--red" href="#menu" data-scroll data-magnetic>
+                  <span>شوف المنيو</span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15m0 0l-6-6m6 6l6-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="btn btn--paper" href="#anatomy" data-scroll data-magnetic><span>شو في جوّا البرغر؟</span></a>
+              </div>
+            </div>
+
+            <div class="hero__visual" aria-hidden="true">
+              <div class="hero__spot" id="hero-spot">
+                <svg class="burst burst--hero" id="hero-burst" viewBox="-110 -110 220 220" data-burst="20" data-inner="0.78" data-jitter="0.07" data-seed="7"></svg>
+                <div class="impact" id="impact"></div>
+                <div class="wow" id="wow">
+                  <svg class="burst" viewBox="-110 -110 220 220" data-burst="14" data-inner="0.7" data-jitter="0.12" data-seed="3"></svg>
+                  <span dir="ltr" lang="en">WOW!</span>
+                </div>
+                <div class="sticker sticker--meat" id="sticker-meat"><b>120</b><span>غرام لحمة</span></div>
+                <div class="sticker sticker--count" id="sticker-count"><b>+40</b><span>صنف</span></div>
+              </div>
+            </div>
+
+            <a class="scrollhint" href="#anatomy" data-scroll data-hero-fade aria-label="انزل لتحت">
+              <span class="scrollhint__mouse"><i></i></span>
+              <span>انزل لتحت</span>
+            </a>
+          </section>
+
+          <!-- ANATOMY (driven by scroll) -->
+          <section class="anatomy" id="anatomy-ui" aria-label="مكوّنات برغر الكلاسيك">
+            <header class="anatomy__head" id="anatomy-head">
+              <p class="eyebrow eyebrow--light">تشريح البرغر</p>
+              <h2 class="anatomy__title">شو في جوّا <em>الكلاسيك</em>؟</h2>
+            </header>
+            <div class="anatomy__spot" id="anatomy-spot"></div>
+            <ol class="anatomy__labels" id="anatomy-labels">
+              <li class="callout" data-part="7"><i class="callout__line"></i><div class="callout__box"><b>الخبزة</b><span>طرية وعليها سمسم</span></div></li>
+              <li class="callout" data-part="6"><i class="callout__line"></i><div class="callout__box"><b>بصل</b><span>حلقات طازة</span></div></li>
+              <li class="callout" data-part="5"><i class="callout__line"></i><div class="callout__box"><b>بندورة</b><span>شرحات طازة</span></div></li>
+              <li class="callout" data-part="4"><i class="callout__line"></i><div class="callout__box"><b>مخلل</b><span>قرمشة وحموضة</span></div></li>
+              <li class="callout" data-part="3"><i class="callout__line"></i><div class="callout__box"><b>جبنة شيدر</b><span>سايحة عاللحمة</span></div></li>
+              <li class="callout" data-part="2"><i class="callout__line"></i><div class="callout__box"><b>120 غرام لحمة</b><span>قلب البرغر</span></div></li>
+              <li class="callout" data-part="1"><i class="callout__line"></i><div class="callout__box"><b>خس</b><span>أخضر ومقرمش</span></div></li>
+            </ol>
+            <div class="anatomy__outro" id="anatomy-outro">
+              <p class="anatomy__outro-title">جعت؟ <em>يلا عالمنيو</em></p>
+              <a class="btn btn--yellow" href="#menu" data-scroll><span>شوف كل الأصناف</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15m0 0l-6-6m6 6l6-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </section>
+
+        </div>
+
+        <canvas class="stage__canvas" id="burger-canvas" aria-hidden="true"></canvas>
+      </div>
+    </div>
+
+    <!-- ============ TICKER ============ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__band ticker__band--a"><div class="ticker__track" data-ticker="1"></div></div>
+      <div class="ticker__band ticker__band--b"><div class="ticker__track" data-ticker="-1"></div></div>
+    </div>
+
+    <!-- ============ MENU ============ -->
+    <section class="menu" id="menu">
+      <header class="menu__head">
+        <p class="eyebrow" dir="ltr" lang="en">KJ SNACK · MENU</p>
+        <h2 class="display" data-reveal-title>المنيو</h2>
+        <p class="menu__lede" data-reveal>اختار قسمك… والباقي علينا.</p>
+      </header>
+
+      <div class="menu__bar" id="menu-bar">
+        <nav class="chips" id="chips" aria-label="أقسام المنيو"></nav>
+        <label class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+          <span class="sr-only">دوّر على صنف</span>
+          <input type="search" id="menu-search" placeholder="دوّر على صنف… مثلاً: زنجر" autocomplete="off" enterkeyhint="search">
+        </label>
+      </div>
+
+      <div class="menu__cats" id="menu-cats"></div>
+      <p class="menu__empty" id="menu-empty" hidden>ما لقينا شي بهالاسم… جرّب كلمة تانية.</p>
+    </section>
+
+    <!-- ============ SPECIAL OFFER ============ -->
+    <section class="offer" id="offer">
+      <div class="offer__panel" data-reveal>
+        <div class="offer__art" aria-hidden="true">
+          <svg class="burst burst--offer" viewBox="-110 -110 220 220" data-burst="16" data-inner="0.74" data-jitter="0.1" data-seed="11"></svg>
+          <div class="offer__icons" id="offer-icons"></div>
+        </div>
+        <div class="offer__copy">
+          <p class="eyebrow eyebrow--light" dir="ltr" lang="en">WOW DEAL</p>
+          <h2 class="offer__title" id="offer-title">عرض خاص</h2>
+          <p class="offer__text" id="offer-text"></p>
+          <div class="offer__cta" id="offer-cta"></div>
+        </div>
+        <span class="offer__wow" dir="ltr" lang="en" aria-hidden="true">WOW!</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="footer__flames" id="footer-flames" aria-hidden="true"></div>
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo" id="footer-logo"><span data-kj-logo></span></div>
+        <p class="footer__lockup" dir="ltr" lang="en">KJ SNACK</p>
+        <p class="footer__tag" dir="ltr" lang="en">BITE THE WOW!</p>
+      </div>
+      <div class="footer__cols" id="footer-cols"></div>
+    </div>
+    <div class="footer__base">
+      <p>© <span id="year">2026</span> <span dir="ltr" lang="en">KJ Snack</span> — كل الحقوق محفوظة</p>
+      <a href="#top" data-scroll class="footer__top">لفوق
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V5m0 0l-6 6m6-6l6 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <div class="cursor" id="cursor" aria-hidden="true"><i></i></div>
+
+  <noscript>
+    <style>.preloader,.loader-logo{display:none!important}body{overflow:auto!important}</style>
+    <p style="padding:2rem;text-align:center">لتشوف المنيو لازم يكون الجافاسكربت شغّال بالمتصفح.</p>
+  </noscript>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
